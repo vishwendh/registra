@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+        function validation(){
+            
+            var name = document.getElementById('name').value;
+            var name = document.getElementById('username').value;
+            
+            if(user = ""){
+                documen.getElementById('nam').innerHTML="** above field must be filled out";
+                retun false;
+            }
+            if(username = ""){
+                documen.getElementById('usn').innerHTML="** above field must be filled out";
+                retun false;
+            }
+            
+            
+        }
+        </script>  </head>
+    <body>
+
+<div class="container"><br>
+    <h1 class="text-sucess text-center">Form</h1><br>
+<form action = "Finsert.php" method = "post" onsubmit="return validation">
+ 
+
+Name: <input type = "text" name = "a" id="name"> <br><br>
+    <span id="nam" class="text-danger font-weight-bold">
+
+UserName: <input type = "text" name = "b" id="usrname"> <br><br>
+        <span id="usn" class="text-danger font-weight-bold">
+
+Address: <input type = "text" name = "c" id="add"> <br><br>
+
+Street: <input type = "text" name = "d" id="street"> <br><br>
+
+Mobile no: <input type = "text" name = "e" id="mobile no"> <br><br>
+    
+Password: <input type = "text" name = "f" id="pass"> <br><br>
+
+
+<input type = "submit" value = REGISTER>
+
+</form>
+        </div>
+    </body>
+</html>
